@@ -1,0 +1,7 @@
+{
+    "build_in_input_audio_device_name": "Built-in Microphone",
+    "rate": 44100,
+    "virtual_audio_device_name": "Soundflower (2ch)",
+    "build_in_output_audio_device_name": "Built-in Output",
+    "frame_size": 1024
+}

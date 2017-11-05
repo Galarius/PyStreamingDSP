@@ -1,0 +1,4 @@
+.vscode/
+*._
+*.pyc
+*.wav
