@@ -47,9 +47,9 @@ class AudioSession:
 
     def __configure_output_file(self, **kwargs):
         self.output_wave_file = wave.open(kwargs[KEY_OUTPUT_FILE_NAME], 'wb')
-        self.output_wave_file.setnchannels(self.file_source.getnchannels())
-        self.output_wave_file.setsampwidth(self.file_source.getsampwidth())
-        self.output_wave_file.setframerate(self.file_source.getframerate())
+        self.output_wave_file.setnchannels(self.channels)
+        self.output_wave_file.setsampwidth(pyaudio.get_sample_size(self.format))
+        self.output_wave_file.setframerate(self.rate)
 
     def __configure_for_stream_mode(self, **kwargs):
         """
